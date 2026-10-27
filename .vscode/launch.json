@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "TheFinder (CodeLLDB)",
+      "type": "lldb",
+      "request": "launch",
+      "program": "${workspaceFolder}/build/finder.exe",
+      "cwd": "${workspaceFolder}",
+      "args": [],
+      "preLaunchTask": "Build TheFinder",
+      "env": {
+        "PATH": "${workspaceFolder}/build;${env:PATH}"
+      },
+      "terminal": "integrated"
+    }
+  ]
+}
